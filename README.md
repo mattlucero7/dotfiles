@@ -36,10 +36,3 @@ stow -nv *
 
 - `-n` simulate
 - `-v` verbose
-
-```shell
-stow -nv *
-```
-
-- `-n` simulate
-- `-v` verbose
