@@ -121,6 +121,19 @@ apply_wb_mod() {
   fi
 }
 alias wb='apply_wb_mod'
+
+# force yourself to get up and away from computer
+delaylock() {
+    if [ -z "$1" ]; then
+        echo "Error: You must specify a sleep duration (e.g., 5s, 10m, 1h)."
+        return 1
+    fi
+
+    echo "Starting delayed session lock in: $1. You can now close this terminal."
+    nohup bash -c "sleep $1 && loginctl lock-session" > /tmp/delaylock_output.log 2>&1 &
+}
+alias dl='delaylock'
+
 alias wj='nvim ~/d/dev-notes/0_journal/journal.md'
 
 . "$HOME/.local/share/../bin/env"
