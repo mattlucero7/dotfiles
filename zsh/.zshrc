@@ -111,7 +111,8 @@ bindkey '^[[B' history-substring-search-down
 #
 alias ls='eza -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
 alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
-alias lS='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
+alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
+alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 
 apply_wb_mod() {
   nvim ~/.config/waybar/config.jsonc ~/.config/waybar/style.css
