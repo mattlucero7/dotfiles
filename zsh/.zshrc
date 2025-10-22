@@ -149,4 +149,4 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
-
+export PATH="/home/matt/.local/bin:$PATH"
