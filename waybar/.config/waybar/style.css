@@ -1,4 +1,4 @@
-@import "../omarchy/current/theme/waybar.css";
+/* Removed :root and inlined color values because Waybar's CSS doesn't support :root/custom properties */
 
 * {
   border: none;
@@ -35,27 +35,27 @@ window#waybar {
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
-  color: @text;
+  color: #E6EEF6;
 
 }
 
 #workspaces button.empty {
   opacity: 0.5;
-  color: @overlay0;
+  color: #9AA4B2;
 }
 
 #workspaces button.visible {
-  color: @blue;
+  color: #6CA0FF;
 }
 
 #workspaces button.active {
-  color: @green;
+  color: #7EE787;
 }
 
 #workspaces button.urgent {
-  background-color: @red;
+  background-color: #FF6B6B;
   border-radius: 1em;
-  color: @text;
+  color: #E6EEF6;
 }
 
 #tray,
@@ -64,8 +64,6 @@ window#waybar {
 #network,
 #bluetooth,
 #pulseaudio,
-#custom-omarchy,
-#custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
@@ -89,14 +87,4 @@ tooltip {
 
 .hidden {
   opacity: 0;
-}
-
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
-}
-
-#custom-screenrecording-indicator.active {
-  color: #a55555;
 }
