@@ -138,7 +138,7 @@ delaylock() {
 }
 alias dl='delaylock'
 
-alias wj='nvim ~/d/dev-notes/0_journal/journal.md'
+alias wj='nvim ~/c/dev-notes/0_journal/journal.md'
 
 . "$HOME/.local/share/../bin/env"
 
