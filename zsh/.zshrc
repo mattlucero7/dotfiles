@@ -113,6 +113,7 @@ alias ls='eza -1l --tree --level 1 --colour=always --icons=always --group-direct
 alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
 alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
+alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
 
 apply_wb_mod() {
   nvim ~/.config/waybar/config.jsonc ~/.config/waybar/style.css
@@ -150,3 +151,4 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 export PATH="/home/matt/.local/bin:$PATH"
+
