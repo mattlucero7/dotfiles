@@ -4,16 +4,16 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["hyprland/workspaces", "wlr/taskbar"],
+  "modules-left": ["niri/workspaces", "wlr/taskbar"],
   "modules-center": ["clock"],
-  "modules-right": [
-    "network",
-    "group/tray-expander",
-    "bluetooth",
-    "pulseaudio",
-    "cpu",
-    "battery"
-  ],
+  "modules-right": ["network", "group/tray-expander", "bluetooth", "pulseaudio", "cpu", "battery"],
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "1": "⬦"
+    }
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -43,9 +43,7 @@
     "on-click": "activate",
     "on-click-middle": "close",
     "sort-by-app-id": true,
-    "ignore-list": [
-      "Alacritty"
-    ]
+    "ignore-list": ["Alacritty"]
   },
 
   "cpu": {
