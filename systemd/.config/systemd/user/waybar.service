@@ -1,0 +1,9 @@
+[Unit]
+Description=Waybar Service
+
+[Service]
+ExecStart=/usr/bin/waybar
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target
