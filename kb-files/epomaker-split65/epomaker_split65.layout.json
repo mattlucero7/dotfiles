@@ -184,7 +184,7 @@
       "KC_F11",
       "KC_F12",
       "KC_NO",
-      "QK_CLEAR_EEPROM",
+      "KC_BSPC",
       "KC_MUTE",
       "KC_Y",
       "KC_U",
@@ -206,8 +206,8 @@
       "KC_HOME",
       "MAGIC_TOGGLE_NKRO",
       "KC_M",
-      "KC_COMM",
-      "KC_DOT",
+      "TO(0)",
+      "TO(2)",
       "KC_SLSH",
       "KC_NO",
       "KC_RSFT",
@@ -217,7 +217,7 @@
       "KC_SPC",
       "KC_NO",
       "KC_RALT",
-      "KC_NO",
+      "TO(0)",
       "KC_RCTL",
       "RGB_SPD",
       "RGB_VAD",
@@ -447,7 +447,7 @@
   "encoders": [
     [
       ["KC_VOLD", "KC_VOLU"],
-      ["KC_VOLD", "KC_VOLU"],
+      ["BL_DEC", "BL_INC"],
       ["KC_VOLD", "KC_VOLU"],
       ["KC_VOLD", "KC_VOLU"]
     ]
