@@ -1,1 +1,9 @@
 *.wants/
+
+# --- Neovim / Vim ---
+Session.vim
+.neoconf.json
+*.swp
+*.swo
+*~
+*.bak
