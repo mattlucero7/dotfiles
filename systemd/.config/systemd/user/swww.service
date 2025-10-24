@@ -1,7 +1,8 @@
 [Unit]
 Description=Set a random wallpaper using swww
 Documentation=https://github.com/LGFae/swww
-After=graphical-session.target
+After=graphical-session.target swww-daemon.service
+Requires=swww-daemon.service
 
 [Service]
 Type=oneshot
