@@ -69,8 +69,8 @@
     "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
-    "interval": 2,
+    "max-length": 36,
+    "interval": 12,
     "on-click": "nm-connection-editor"
   },
   "battery": {
@@ -99,7 +99,7 @@
     "on-click": "blueberry"
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": "{volume}% {icon}",
     "on-click": "$TERMINAL --class=Wiremix -e wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
