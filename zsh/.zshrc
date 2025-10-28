@@ -114,6 +114,7 @@ alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-direc
 alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
+alias lf='fc-list --format="%{family[0]}\\n" | sort -u'
 
 apply_wb_mod() {
   nvim ~/.config/waybar/config.jsonc ~/.config/waybar/style.css
@@ -141,7 +142,7 @@ alias dl='delaylock'
 
 alias wj='nvim ~/c/dev-notes/0_journal/journal.md'
 
-. "$HOME/.local/share/../bin/env"
+# . "$HOME/.local/share/../bin/env"
 
 # fnm
 FNM_PATH="/home/matt/.local/share/fnm"
