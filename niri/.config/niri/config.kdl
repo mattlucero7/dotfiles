@@ -365,6 +365,11 @@ window-rule {
     draw-border-with-background false
 }
 
+window-rule {
+    match app-id="test$"
+    open-floating true
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
