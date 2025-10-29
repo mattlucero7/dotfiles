@@ -451,21 +451,21 @@ binds {
     Mod+Ctrl+End  { move-column-to-last; }
 
     Mod+Ctrl+Left  { focus-monitor-left; }
-    Mod+Ctrl+Down  { focus-monitor-down; }
-    Mod+Ctrl+Up    { focus-monitor-up; }
+    Mod+Ctrl+Down  { focus-workspace-down; }
+    Mod+Ctrl+Up    { focus-workspace-up; }
     Mod+Ctrl+Right { focus-monitor-right; }
     Mod+Ctrl+H     { focus-monitor-left; }
-    Mod+Ctrl+J     { focus-monitor-down; }
-    Mod+Ctrl+K     { focus-monitor-up; }
+    Mod+Ctrl+J     { focus-workspace-down; }
+    Mod+Ctrl+K     { focus-workspace-up; }
     Mod+Ctrl+L     { focus-monitor-right; }
 
     Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+Down  { move-column-to-workspace-down; }
+    Mod+Shift+Ctrl+Up    { move-column-to-workspace-up; }
     Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
     Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+J     { move-column-to-workspace-down; }
+    Mod+Shift+Ctrl+K     { move-column-to-workspace-up; }
     Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
 
     // Alternatively, there are commands to move just a single window:
@@ -476,14 +476,14 @@ binds {
     // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
     // ...
 
-    Mod+Alt+Down      { focus-workspace-down; }
-    Mod+Alt+Up        { focus-workspace-up; }
-    Mod+Alt+K              { focus-workspace-down; }
-    Mod+Alt+J              { focus-workspace-up; }
-    Mod+Alt+Shift+Down { move-column-to-workspace-down; }
-    Mod+Alt+Shift+Up   { move-column-to-workspace-up; }
-    Mod+Alt+Shift+K   { move-column-to-workspace-down; }
-    Mod+Alt+Shift+J   { move-column-to-workspace-up; }
+    // Mod+Alt+Down      { focus-workspace-down; }
+    // Mod+Alt+Up        { focus-workspace-up; }
+    // Mod+Alt+K              { focus-workspace-down; }
+    // Mod+Alt+J              { focus-workspace-up; }
+    // Mod+Alt+Shift+Down { move-column-to-workspace-down; }
+    // Mod+Alt+Shift+Up   { move-column-to-workspace-up; }
+    // Mod+Alt+Shift+K   { move-column-to-workspace-down; }
+    // Mod+Alt+Shift+J   { move-column-to-workspace-up; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
@@ -503,15 +503,15 @@ binds {
     Mod+Shift+WheelScrollDown   { move-column-right; }
     Mod+Shift+WheelScrollUp     { move-column-left; }
 
-    Mod+Alt+WheelScrollDown        cooldown-ms=150 { focus-workspace-down; }
-    Mod+Alt+WheelScrollUp          cooldown-ms=150 { focus-workspace-up; }
-    Mod+Alt+Shift+WheelScrollDown  cooldown-ms=150 { move-window-to-workspace-down; }
-    Mod+Alt+Shift+WheelScrollUp    cooldown-ms=150 { move-window-to-workspace-up; }
+    Mod+Ctrl+WheelScrollDown        cooldown-ms=150 { focus-workspace-down; }
+    Mod+Ctrl+WheelScrollUp          cooldown-ms=150 { focus-workspace-up; }
+    Mod+Ctrl+Shift+WheelScrollDown  cooldown-ms=150 { move-window-to-workspace-down; }
+    Mod+Ctrl+Shift+WheelScrollUp    cooldown-ms=150 { move-window-to-workspace-up; }
 
-    Mod+Ctrl+WheelScrollDown         { focus-monitor-right; }
-    Mod+Ctrl+WheelScrollUp           { focus-monitor-left; }
-    Mod+Ctrl+Shift+WheelScrollDown   { move-column-to-monitor-right; }
-    Mod+Ctrl+Shift+WheelScrollUp     { move-column-to-monitor-left; }
+    Mod+Alt+WheelScrollDown         { focus-monitor-right; }
+    Mod+Alt+WheelScrollUp           { focus-monitor-left; }
+    Mod+Alt+Shift+WheelScrollDown   { move-column-to-monitor-right; }
+    Mod+Alt+Shift+WheelScrollUp     { move-column-to-monitor-left; }
 
     // To avoid scrolling through workspaces really fast, you can use
     // the cooldown-ms property. The bind will be rate-limited to this value.
