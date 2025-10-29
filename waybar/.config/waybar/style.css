@@ -17,12 +17,13 @@ window#waybar {
 }
 
 .modules-right {
-  margin-right: 4px;
+  margin: 2px 4px;
+  background-color: rgba(55, 55, 55, 0.65);
 }
 
 #workspaces {
   background-color: rgba(120,120,120,0.3);
-  border: 2px solid rgba(120,120,120,0.8); 
+  border: 2px solid rgba(120,120,120,0.3); 
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin: 2px;
   border-radius: 8px;
@@ -80,9 +81,32 @@ tooltip {
 }
 
 #clock {
-  margin-left: 8.75px;
+  margin-top: 2px;
+  background-color: rgba(55, 55, 55, 0.65);
 }
 
 .hidden {
   opacity: 0;
+}
+
+#taskbar {
+  background: rgba(120,120,120,0.3);
+  border: 2px solid rgba(120,120,120,0.3); 
+  border-radius: 8px;
+  margin: 2px;
+  transition: all 0.5s ease;
+}
+
+#taskbar button {
+  padding: 0px 5px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+
+#taskbar button.active {
+  background: rgba(105, 106, 120, 0.4);
+}
+
+#taskbar button:hover {
+  background: rgba(34, 36, 54, 0.5);
 }
