@@ -4,7 +4,7 @@ TERM = "xterm-256color"
 [font]
 normal = { family = "MxPlus IBM VGA 8x16" }
 bold = { family = "Lekton Nerd Font" }
-italic = { family = "CaskaydiaMono Nerd Font" }
+italic = { family = "Agave Nerd Font" }
 size = 11.5
 
 [window]
