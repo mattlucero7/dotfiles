@@ -18,7 +18,9 @@ window#waybar {
 
 .modules-right {
   margin: 2px 4px;
-  background-color: rgba(55, 55, 55, 0.65);
+  background-color: rgba(55, 55, 55, 0.55);
+  border-radius: 6px;
+  padding: 0 4px;
 }
 
 #workspaces {
@@ -81,8 +83,14 @@ tooltip {
 }
 
 #clock {
-  margin-top: 2px;
-  background-color: rgba(55, 55, 55, 0.65);
+  margin: 2px 4px;
+  background-color: rgba(55, 55, 55, 0.55);
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+#clock.calendar {
+  border-radius: 4px;
 }
 
 .hidden {
@@ -99,7 +107,7 @@ tooltip {
 
 #taskbar button {
   padding: 0px 5px;
-  border-radius: 0px;
+  border-radius: 8px;
   transition: all 0.5s ease;
 }
 
