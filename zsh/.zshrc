@@ -109,6 +109,8 @@ bindkey '^[[B' history-substring-search-down
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+TERMINAL='alacritty'
+
 alias ls='eza -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
 alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
 alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
@@ -116,6 +118,9 @@ alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
 alias lfc='fc-cache -fv && fc-list --format="%{family[0]}\\n" | sort -u'
 alias soft-reboot='systemctl soft-reboot'
+alias lg='$TERMINAL -T "lazygit" -e lazygit'
+alias ld='$TERMINAL -T "lazydocker" -e lazydocker'
+
 
 apply_wb_mod() {
   nvim ~/.config/waybar/config.jsonc ~/.config/waybar/style.css
