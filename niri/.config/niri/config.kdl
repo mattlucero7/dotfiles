@@ -384,6 +384,14 @@ window-rule {
     match title="lazydocker"
     default-column-width { proportion 0.45; }
 }
+window-rule {
+    match title="Kando Menu"
+    opacity 1.0
+    open-floating true
+    border { off; }
+    focus-ring { off; }
+    shadow { off; }
+}
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
@@ -407,6 +415,7 @@ binds {
     Super+C     { spawn "code-insiders"; }
     Super+N     hotkey-overlay-title="Open Nvim in new terminal: Nvim" { spawn-sh "alacritty -e nvim"; }
     Super+B     { spawn "google-chrome-stable"; }
+    Super+E     { spawn-sh "kando --menu 'Example Menu'"; }
 
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock"    { spawn "swaylock"; }
 
