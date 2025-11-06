@@ -1,0 +1,23 @@
+{
+  "bootloader": "limine",
+  "packages": [
+    "base",
+    "base-devel",
+    "cloud-init",
+    "cloudflared",
+    "debugedit",
+    "docker",
+    "docker-compose",
+    "lazydocker",
+    "fakeroot",
+    "git",
+    "haveged",
+    "inetutils",
+    "networkmanager",
+    "openssh",
+    "rsync",
+    "parted",
+    "ufw",
+    "vim"
+  ]
+}
