@@ -1,5 +1,5 @@
 {
-  "bootloader": "limine",
+  "bootloader": "Limine",
   "packages": [
     "base",
     "base-devel",
@@ -19,5 +19,8 @@
     "parted",
     "ufw",
     "vim"
-  ]
+  ],
+  "network_config": {
+    "type": "nm"
+  }
 }
