@@ -118,8 +118,8 @@ alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
 alias lfc='fc-cache -fv && fc-list --format="%{family[0]}\\n" | sort -u'
 alias soft-reboot='systemctl soft-reboot'
-alias lg='$TERMINAL -T "lazygit" -e lazygit'
-alias ld='$TERMINAL -T "lazydocker" -e lazydocker'
+alias lg='$TERMINAL -T "lazygit" -e lazygit &'
+alias ld='$TERMINAL -T "lazydocker" -e lazydocker &'
 
 
 apply_wb_mod() {
