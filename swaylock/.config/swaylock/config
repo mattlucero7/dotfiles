@@ -1,0 +1,54 @@
+# Path to a background image
+image=~/.config/swaylock/lock.png
+
+# Font to use for the text
+font='Agave Nerd Font'
+
+# Font size
+font-size=40
+
+# --- Indicator ---
+# Show the indicator even when idle
+indicator-idle-visible
+# Radius of the indicator circle
+indicator-radius=80
+# Thickness of the indicator circle
+indicator-thickness=10
+# Key highlight color (Tokyonight purple)
+key-hl-color=9d7cd8
+# Ring highlight color (Tokyonight blue)
+ring-hl-color=7aa2f7
+
+# --- Colors ---
+# Color of the inside of the ring (Tokyonight bg)
+inside-color=1a1b26
+# Color of the inside of the ring when cleared
+inside-clear-color=1a1b26
+# Color of the inside of the ring when correct (success green)
+inside-ver-color=9ece6a
+# Color of the inside of the ring when wrong (error pink)
+inside-wrong-color=f7768e
+# Color of the ring when cleared (primary blue)
+ring-clear-color=7aa2f7
+# Color of the ring when correct
+ring-ver-color=9ece6a
+# Color of the ring when wrong
+ring-wrong-color=f7768e
+
+# --- Effects (from swaylock-effects fork) ---
+# Blurs the image
+effect-blur=4x2
+# Scales the image
+effect-scale=0.4
+# Applies a vignette effect
+effect-vignette=0.2:0.5
+# Shows the number of failed attempts
+show-failed-attempts
+# Disables the unlock indicator feedback
+# no-unlock-indicator
+
+# --- Timestamps ---
+# Format for the date string
+datestr="%a %e.%m.%Y"
+# Format for the time string
+timestr="%k:%M"
