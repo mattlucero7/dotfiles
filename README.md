@@ -5,13 +5,13 @@
 To add new package:
 
 ```shell
-mkdir <package>/.config
+mkdir package/.config
 ```
 
-Then add files to `<package>/.config`.
+Then add files to `package/.config`.
 
 ```shell
-mv ~/.config/<package> <package>/.config/
+mv ~/.config/package package/.config/
 ```
 
 ## Installing Packages with GNU Stow
@@ -25,14 +25,16 @@ stow *
 To install specific package:
 
 ```shell
-stow <package>
+stow -vt ~ package
 ```
+
+- `-v` verbose
+- `-t` target directory
 
 Dry run:
 
 ```shell
-stow -nv *
+stow -nv package
 ```
 
 - `-n` simulate
-- `-v` verbose
