@@ -3,7 +3,6 @@
   "packages": [
     "base",
     "base-devel",
-    "cloud-init",
     "cloudflared",
     "debugedit",
     "docker",
@@ -11,7 +10,6 @@
     "lazydocker",
     "fakeroot",
     "git",
-    "haveged",
     "inetutils",
     "networkmanager",
     "openssh",
