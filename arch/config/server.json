@@ -28,5 +28,17 @@
     "type": "nm"
   },
   "kernels": ["linux", "linux-lts"],
+  "profile_config": {
+    "gfx_driver": null,
+    "greeter": null,
+    "profile": {
+      "custom_settings": {
+        "Docker": {},
+        "sshd": {}
+      },
+      "details": ["Docker", "sshd"],
+      "main": "Server"
+    }
+  },
   "timezone": "America/Winnipeg"
 }
