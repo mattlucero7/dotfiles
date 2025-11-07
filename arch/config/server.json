@@ -21,8 +21,7 @@
     "vim",
     "fail2ban",
     "lynis",
-    "rkhunter",
-    "aide"
+    "rkhunter"
   ],
   "network_config": {
     "type": "nm"
