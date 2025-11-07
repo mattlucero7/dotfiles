@@ -18,9 +18,15 @@
     "rsync",
     "parted",
     "ufw",
-    "vim"
+    "vim",
+    "fail2ban",
+    "lynis",
+    "rkhunter",
+    "aide"
   ],
   "network_config": {
     "type": "nm"
-  }
+  },
+  "kernels": ["linux", "linux-lts"],
+  "timezone": "America/Winnipeg"
 }
