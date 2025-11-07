@@ -9,7 +9,6 @@
     "lazydocker",
     "git",
     "openssh",
-    "rsync",
     "ufw",
     "neovim",
     "fail2ban",
