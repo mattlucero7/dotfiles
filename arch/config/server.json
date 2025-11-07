@@ -16,7 +16,7 @@
     "rsync",
     "parted",
     "ufw",
-    "vim",
+    "nvim",
     "fail2ban",
     "lynis",
     "rkhunter"
