@@ -11,7 +11,6 @@
     "fakeroot",
     "git",
     "inetutils",
-    "networkmanager",
     "openssh",
     "rsync",
     "parted",
@@ -22,7 +21,13 @@
     "rkhunter"
   ],
   "network_config": {
-    "type": "nm"
+    "type": "manual",
+    "nics": [
+      {
+        "iface": "en*",
+        "dhcp": true
+      }
+    ]
   },
   "kernels": ["linux", "linux-lts"],
   "profile_config": {
