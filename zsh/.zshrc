@@ -158,4 +158,3 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 export PATH="/home/matt/.local/bin:$PATH"
-
