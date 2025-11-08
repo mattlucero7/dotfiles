@@ -51,8 +51,8 @@ input {
     mouse {
         // off
         // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
+        accel-speed 0.4
+        accel-profile "adaptive"
         // scroll-method "no-scroll"
     }
 
@@ -72,7 +72,8 @@ input {
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    focus-follows-mouse max-scroll-amount="90%"
+    focus-follows-mouse max-scroll-amount="80%"
+    workspace-auto-back-and-forth
 }
 
 // You can configure outputs by their name, which you can find
@@ -146,6 +147,8 @@ layout {
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
     center-focused-column "never"
+    always-center-single-column
+    empty-workspace-above-first
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -164,7 +167,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.45; }
+    default-column-width { proportion 0.66; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -327,7 +330,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 1.2
+    slowdown 1.5
 }
 
 spawn-at-startup "alacritty"
@@ -392,7 +395,6 @@ window-rule {
 window-rule {
     match app-id="Alacritty"
     match at-startup=true
-    default-column-width { proportion 0.35; }
 }
 window-rule {
     match title="lazygit"
