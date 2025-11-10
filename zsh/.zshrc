@@ -111,8 +111,7 @@ bindkey '^[[B' history-substring-search-down
 #
 TERMINAL='alacritty'
 
-alias ls='eza -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
-alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
+alias ls="eza --colour=always --icons=always --group-directories-first"
 alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
@@ -146,7 +145,7 @@ delaylock() {
 }
 alias dl='delaylock'
 
-alias wj='nvim ~/c/dev-notes/0_journal/journal.md'
+alias wj='nvim ~/dev-notes/0_journal/journal.md'
 
 # . "$HOME/.local/share/../bin/env"
 
@@ -158,3 +157,5 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 export PATH="/home/matt/.local/bin:$PATH"
+export LESS='-R --use-color -Dd+r$Du+b$'
+alias ip='ip -color=auto'
