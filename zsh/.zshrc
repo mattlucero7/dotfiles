@@ -110,9 +110,8 @@ bindkey '^[[B' history-substring-search-down
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 TERMINAL='alacritty'
-
-alias ls='eza -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
-alias la='eza -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions --no-filesize'
+alias ls="eza --colour=always --icons=always --group-directories-first"
+alias la="eza -a --colour=always --icons=always --group-directories-first"
 alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
@@ -120,6 +119,7 @@ alias lfc='fc-cache -fv && fc-list --format="%{family[0]}\\n" | sort -u'
 alias soft-reboot='systemctl soft-reboot'
 alias lzg='$TERMINAL -T "lazygit" -e lazygit &'
 alias lzd='$TERMINAL -T "lazydocker" -e lazydocker &'
+alias ip='ip -color=auto'
 
 
 apply_wb_mod() {
@@ -158,4 +158,4 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 export PATH="/home/matt/.local/bin:$PATH"
-
+export LESS='-R --use-color -Dd+r$Du+b$'

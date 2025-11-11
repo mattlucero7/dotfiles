@@ -1,9 +1,16 @@
 [Unit]
 Description=Polkit KDE Authentication Agent
+Documentation=https://wiki.archlinux.org/title/Polkit
+After=graphical-session.target
+PartOf=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
 
 [Service]
 Type=simple
 ExecStart=/usr/lib/polkit-kde-authentication-agent-1
+Restart=on-failure
+RestartSec=1sec
+TimeoutStopSec=10sec
 
 [Install]
 WantedBy=graphical-session.target
