@@ -108,31 +108,19 @@ bindkey '^[[B' history-substring-search-down
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-TERMINAL='alacritty'
+
+TERMINAL='ghostty'
 alias ls="eza --colour=always --icons=always --group-directories-first"
 alias la="eza -a --colour=always --icons=always --group-directories-first"
-alias lS='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
-alias lSa='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
+alias ll='eza --total-size -1l --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
+alias lla='eza --total-size -1la --tree --level 1 --colour=always --icons=always --group-directories-first --header --git -F=always --octal-permissions'
 alias rescan='echo 1 > sudo /sys/bus/pci/rescan'
 alias lfc='fc-cache -fv && fc-list --format="%{family[0]}\\n" | sort -u'
 alias soft-reboot='systemctl soft-reboot'
 alias lzg='$TERMINAL -T "lazygit" -e lazygit &'
 alias lzd='$TERMINAL -T "lazydocker" -e lazydocker &'
 alias ip='ip -color=auto'
-
-
-apply_wb_mod() {
-  nvim ~/.config/waybar/config.jsonc ~/.config/waybar/style.css
-
-  if [[ $? -eq 0 ]]; then
-    killall -SIGUSR2 waybar
-    echo "Waybar configuration reloaded."
-  else
-    echo "Editing canceled or failed. Waybar not reloaded."
-  fi
-}
-alias wb='apply_wb_mod'
+alias vf='vim $(fzf --preview "cat {}")'
 
 # force yourself to get up and away from computer
 delaylock() {
@@ -150,7 +138,7 @@ alias wj='nvim ~/c/dev-notes/0_journal/journal.md'
 
 # . "$HOME/.local/share/../bin/env"
 
-# fnm
+# node js fnm
 FNM_PATH="/home/matt/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
