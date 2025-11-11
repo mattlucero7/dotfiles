@@ -7,7 +7,7 @@ Requires=swww-daemon.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c "WALLPAPER=$(find %h/.config/matt/wallpapers/ -type f \\( -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' \\) | shuf -n 1); [ -n \"$WALLPAPER\" ] && /usr/bin/swww img --transition-type random --transition-duration 2 --transition-fps 60 \"$WALLPAPER\""
+ExecStart=/bin/sh %h/.config/systemd/user/scripts/swww.sh %h/.config/matt/wallpapers/
 RemainAfterExit=yes
 
 [Install]
