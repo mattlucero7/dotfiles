@@ -127,6 +127,7 @@ alias ld='lazydocker'
 alias ip='ip -color=auto'
 alias vf='vim $(fzf --preview "cat {}")'
 alias yay='yay --color=always'
+alias exe="nohup $@ > /dev/null 2>&1 &"
 
 # force yourself to get up and away from computer
 delaylock() {
@@ -158,17 +159,12 @@ alias ip='ip -color=auto'
 # Rust environment
 . "$HOME/.cargo/env"
 
-# bun completions
-[ -s "/home/matt/.bun/_bun" ] && source "/home/matt/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 . "/home/matt/.deno/env"
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+# initialize tmux on start
+if [ -z "$TMUX" ] && [ -z "$VSCODE_CWD" ] && [ "$TERM_PROGRAM" != "vscode" ]; then
+  exec tmux new-session -A -s default
+fi
