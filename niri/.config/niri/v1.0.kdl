@@ -379,7 +379,7 @@ window-rule {
 window-rule {
     geometry-corner-radius 8
     clip-to-geometry true
-    opacity 0.95
+    opacity 0.989
     draw-border-with-background false
 }
 
@@ -396,13 +396,7 @@ window-rule {
 
 window-rule {
     match app-id="google-chrome$"
-    default-column-width { proportion 0.6667; }
     opacity 0.99
-}
-window-rule {
-    match title="lazygit"
-    match title="lazydocker"
-    default-column-width { proportion 0.45; }
 }
 window-rule {
     match title="Kando Menu"

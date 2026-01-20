@@ -128,6 +128,7 @@ alias ip='ip -color=auto'
 alias vf='vim $(fzf --preview "cat {}")'
 alias yay='yay --color=always'
 alias exe="nohup $@ > /dev/null 2>&1 &"
+alias gd='VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json ~/Downloads/Godot*.x86_64 --display-driver wayland'
 
 # force yourself to get up and away from computer
 delaylock() {
@@ -164,7 +165,5 @@ alias ip='ip -color=auto'
 autoload -Uz compinit
 compinit
 
-# initialize tmux on start
-if [ -z "$TMUX" ] && [ -z "$VSCODE_CWD" ] && [ "$TERM_PROGRAM" != "vscode" ]; then
-  exec tmux new-session -A -s default
-fi
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export GBM_BACKEND=nvidia-drm

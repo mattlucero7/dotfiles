@@ -18,6 +18,26 @@ layout {
     }
 }
 
+workspace "code" {
+    open-on-output "DP-5"
+}
+
+window-rule {
+    match app-id="code-insiders"
+    open-on-workspace "code"
+    open-focused true
+}
+
 window-rule {
     geometry-corner-radius 0
+    default-column-width {proportion 0.5;}
+}
+
+window-rule {
+    match app-id="org.gnome.Nautilus"
+    
+    open-floating true
+
+    open-maximized false
+    open-maximized-to-edges false
 }
