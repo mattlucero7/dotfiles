@@ -111,6 +111,8 @@ bindkey '^[[B' history-substring-search-down
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 export EDITOR='nvim'
 export TERMINAL='ghostty'
 alias ls="eza -F=always --colour=always --group-directories-first"
@@ -128,7 +130,8 @@ alias ip='ip -color=auto'
 alias vf='vim $(fzf --preview "cat {}")'
 alias yay='yay --color=always'
 alias exe="nohup $@ > /dev/null 2>&1 &"
-alias gd='VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json ~/Downloads/Godot*.x86_64 --display-driver wayland'
+alias code="code-insiders"
+alias wj='nvim ~/dev-notes/0_journal/journal.md'
 
 # force yourself to get up and away from computer
 delaylock() {
@@ -141,8 +144,6 @@ delaylock() {
     nohup bash -c "sleep $1 && loginctl lock-session" > /tmp/delaylock_output.log 2>&1 &
 }
 alias dl='delaylock'
-
-alias wj='nvim ~/dev-notes/0_journal/journal.md'
 
 # . "$HOME/.local/share/../bin/env"
 
@@ -159,6 +160,7 @@ alias ip='ip -color=auto'
 
 # Rust environment
 . "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 . "/home/matt/.deno/env"
 # Initialize zsh completions (added by deno install script)
