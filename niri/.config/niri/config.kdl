@@ -26,6 +26,7 @@ window-rule {
     match app-id="code-insiders"
     open-on-workspace "code"
     open-focused true
+    open-maximized true
     opacity 1.0
 }
 
@@ -47,4 +48,12 @@ window-rule {
     match app-id="org.godotengine.Editor"
     open-maximized false
     default-column-width {proportion 0.5;}
+}
+
+/-window-rule {
+    match app-id=r#"learn"#
+    match title=r#"^.*DEBUG.*$"#
+
+    open-maximized false
+    open-floating true
 }
