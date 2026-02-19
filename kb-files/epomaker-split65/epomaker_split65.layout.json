@@ -1,24 +1,7 @@
 {
   "name": "EPOMAKER Split65",
   "vendorProductId": 875422918,
-  "macros": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "{KC_RSFT,KC_GRV}"
-  ],
+  "macros": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "{KC_RSFT,KC_GRV}"],
   "layers": [
     [
       "KC_NO",
@@ -67,8 +50,8 @@
       "KC_NO",
       "KC_NO",
       "KC_LCTL",
-      "KC_LALT",
       "CUSTOM(22)",
+      "KC_LALT",
       "KC_NO",
       "KC_NO",
       "KC_SPC",

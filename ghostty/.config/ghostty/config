@@ -58,3 +58,5 @@ theme=GitHub Dark Default
 window-padding-x=4
 term=xterm-256color
 background-blur=true
+window-width=180
+window-height=60
